@@ -1,0 +1,21 @@
+# Specify that we ignore EVERYTHING by default,
+# EXCEPT specified files. 
+
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!app.yaml
+!twitter_sent.py
+!LICENSE
+!README.md
+!html/*
+
+# ...even if they are in subdirectories
+!*/
+
+# QUARRY #
+# if the files to be tracked are in subdirectories
+#!*/a/b/file1.txt
+#!*/a/b/c/*
