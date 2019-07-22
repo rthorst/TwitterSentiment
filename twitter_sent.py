@@ -345,10 +345,10 @@ class MainPage(webapp2.RequestHandler):
         if not keyword:
             suggested_keywords = ["alarm clocks", "the future", "miller lite", "taco bell", "yoga", "netflix",
                                   "life", "traffic", "elon musk", "beards", "world trade", "pepsi", "amazon"]
-            indices = np.arange(suggested_keywords)
+            indices = np.arange(len(suggested_keywords))
             random.shuffle(indices)
             keyword = suggested_keywords[indices[0]]
-            
+
         # Get recent tweets based on the keyword, up to 300 maximum tweets.
         tweets = get_tweets(keyword, max_tweets=300)
 
