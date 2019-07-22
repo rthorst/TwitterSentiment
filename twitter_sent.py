@@ -131,7 +131,7 @@ def plot_tweets(tweets, sentiment_scores):
             """
 
             # Sort tweets from negative to positive.
-            # This step is not strictly necessary, but makes it easier to see the overall shape of the data. 
+            # This step is not strictly necessary, but makes it easier to see the overall shape of the data.
             sorted_indices = np.argsort(sentiment_scores)
             sentiment_scores = np.array(sentiment_scores)[sorted_indices]
             tweets = np.array(tweets)[sorted_indices]
@@ -345,8 +345,10 @@ class MainPage(webapp2.RequestHandler):
         if not keyword:
             suggested_keywords = ["alarm clocks", "the future", "miller lite", "taco bell", "yoga", "netflix",
                                   "life", "traffic", "elon musk", "beards", "world trade", "pepsi", "amazon"]
-            keyword = np.random.choice(suggested_keywords)
-
+            indices = np.arange(suggested_keywords)
+            random.shuffle(indices)
+            keyword = suggested_keywords[indices[0]]
+            
         # Get recent tweets based on the keyword, up to 300 maximum tweets.
         tweets = get_tweets(keyword, max_tweets=300)
 
