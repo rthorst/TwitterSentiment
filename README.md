@@ -12,4 +12,4 @@ After a keyword is entered, the app mines a few hundred recent tweets - for exam
 
 TwitterSent retrieves tweets in response to a keyword using the twitter API, specifically the Python library tweepy.
 
-![alt text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/data%20science.PNG)
+![alt text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/tweepy.PNG)
