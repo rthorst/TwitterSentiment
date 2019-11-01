@@ -13,3 +13,10 @@ After a keyword is entered, the app mines a few hundred recent tweets - for exam
 TwitterSent retrieves tweets in response to a keyword using the twitter API, specifically the Python library tweepy.
 
 ![alt text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/tweepy.PNG)
+
+Given a tweet, TwitterSent scores the valence ("sentiment") of that tweet using a social media-aware sentiment model called VADER (https://github.com/cjhutto/vaderSentiment) (Hutto & Gilbert, 2014, ISWSM-14). Notice that the model accurately captures the meaning of emojis and other social media-specific tokens. Vader is mostly a lexicon-based model, although the model does include some simple heuristics, for example to capture negation. 
+
+![alt_text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/vaderSentiment.PNG)
+
+
+
