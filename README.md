@@ -18,7 +18,7 @@ Given a tweet, TwitterSent scores the valence ("sentiment") of that tweet using 
 
 ![alt_text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/vaderSentiment.PNG)
 
-Once the sentences are scored for sentiment, TwitterSent generates interactive plots of these sentiment scores using the Python library Bokeh. 
+Once the sentences are scored for sentiment, TwitterSent generates interactive plots of these sentiment scores using the Python library Bokeh. To make the model more explainable, some of the most highly valenced words detected by the model are displayed to explain the classification result. 
 
 ![alt_text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/bokeh.PNG)
 
