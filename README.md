@@ -22,3 +22,8 @@ Once the sentences are scored for sentiment, TwitterSent generates interactive p
 
 ![alt_text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/bokeh.PNG)
 
+A number of extensions should be possible to TwitterSent. Some of the key extensions include:
+
+* A deep learning-based model of sentiment. VADERSent performs well on social media but represents text as a collection of words. Much of the meaning of text comes also from the high-level organization of these words, such as syntax, a property better captured by deep learning models of sentiment which learn to represent sentences as a sequence of words. 
+
+* A better explanatory model. TwitterSent displays some of the most highly valenced words, but an even better explanation would detect some of the most highly diagnostic tweets. 
