@@ -1,6 +1,6 @@
 # TwitterSent is a Sentiment Analysis App for Twitter
 
-TwitterSent can provide real-time sentiment analysis for any keyword you choose, for example, "data science."
+TwitterSent (http://tinyurl.com/twittersent) can provide real-time sentiment analysis for any keyword you choose, for example, "data science."
 
 ![alt text](https://raw.githubusercontent.com/rthorst/TwitterSentiment/master/home_screen.PNG)
 
